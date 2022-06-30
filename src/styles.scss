@@ -12,6 +12,7 @@ body{
     background-color: #fff;
     &__container{
         border-bottom: thin solid #eee;
+        cursor: pointer;
     }
     &__img{
         width: 120px;
@@ -23,7 +24,8 @@ body{
         line-height: 1.25;
     }
     &__iconfree{
-        width: 2%;
+        width: 4%;
+        margin-left: 5px;
     }
     &__descripcion{
         color: #333;
@@ -41,7 +43,8 @@ body{
 .Detalle{
     background-color: #fff;
     &__img{
-        width: 80%;
+        width: auto;
+        max-height: 350px;
     }
     &__vendidos{
         color: rgba(0,0,0,.55);
@@ -65,7 +68,7 @@ body{
         background-color: #3483fa;
         border-color: transparent;
         color: #fff;
-        width: 100%;
+        width: 80%;
         border-radius: 3px;
         padding: 6px;
         &:hover{
@@ -77,3 +80,17 @@ body{
         font-size: 14px;
     }
 }
+
+
+@media (max-width: 500px) {
+    .Nav__ml{
+        padding: 10px;
+    }
+    .Products{
+        &__iconfree{
+            width: 8%;
+        }
+    }
+  
+  }
+  

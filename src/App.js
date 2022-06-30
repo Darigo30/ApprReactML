@@ -3,7 +3,7 @@ import './App.css';
 import { NavBar } from './NavBar';
 import { Products } from './Productos';
 import { Detalle } from './Detalle';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router, Link, useParams } from "react-router-dom";
 
 
 function App() {
@@ -11,13 +11,13 @@ function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route path="/Products" element={<Products />} />
+        <Route exact path="/items" element={<Products />} />
       </Routes>
       <Routes>
-        <Route path="/Detalle" element={<Detalle />} />
+        <Route path="/items/:id" element={<Detalle />} />
       </Routes>
     </div>
   );
 }
-   
+
 export default App
